@@ -4,7 +4,7 @@ from userena.models import UserenaBaseProfile
 from django.db import models
 
 
-class MyProfile(UserenaBaseProfile):  
+class UserProfile(UserenaBaseProfile):
     user = models.OneToOneField(User,
                                 unique=True,
                                 verbose_name=_('user'),
